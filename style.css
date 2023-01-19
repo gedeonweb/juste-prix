@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgb(202, 209, 236);
+}
+
+#bg {
+    position: fixed;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    font-size: 80em;
+    margin-top: -50%;
+    color: rgba(186, 197, 243, 0.474);
+    transform: rotate(10deg);
+}
+
+.app {
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.chiffre {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgb(150, 158, 191);
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2em;
+    color: rgb(38, 46, 79);
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    font-size: 1.5rem;
+    line-height: 2em;
+    color: rgb(38, 46, 79);
+    margin-bottom: 2px;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+.submit {
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgb(150, 158, 191);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.error {
+    display: none;
+}
+
+.error-display {
+    display: bloc;
+    height: 40px;
+    width: 300px;
+    background-color: red;
+    transition: 1s ease-in-out;
+}
+
+.plus {
+    display: none;
+}
+
+.plus-display {
+    display: bloc;
+    height: 40px;
+    width: 300px;
+    margin: auto;
+    background-color: rgb(94, 206, 144);
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari et Chrome */
+    -o-animation: fadein 1s;
+    /* Opera */
+}
+
+.moins {
+    display: none;
+}
+
+.moins-display {
+    display: bloc;
+    height: 40px;
+    width: 300px;
+    margin: auto;
+    background-color: rgb(94, 165, 206);
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari et Chrome */
+    -o-animation: fadein 1s;
+    /* Opera */
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    70% {
+        opacity: 0.2;
+        transform: scale(50%)
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: scale(110%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%)
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* sur Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* sur Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
